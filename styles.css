@@ -59,6 +59,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 }
 
 .header-container {
+    /* border: #00F594 solid 2px; */
     position: relative;
     width: 250px;
     height: 250px;
@@ -71,13 +72,28 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 .circle-bg {
     width: 100%;
     height: 100%;
+    animation: float 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
 }
 
 .mic-icon {
     position: absolute;
     width: 80px;
+    animation: float 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
 .new-badge {
     position: absolute;
     top: 10px;
@@ -90,7 +106,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
     border-radius: 20px;
 }
 
-header>h1 {
+.hero-content h1{
     font-size: 72px;
     font-weight: 900;
     margin-bottom: 10px;
@@ -110,6 +126,7 @@ header>h1 {
 }
 
 .spotify-btn {
+    /* border: #00F594 solid 2px; */
     background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
     border: none;
     color: white;
@@ -159,6 +176,7 @@ header>h1 {
 }
 
 .about-content {
+    /* border: #00F594 solid 2px; */
     max-width: 850px;
     margin: 0 auto 64px auto;
 }
@@ -175,6 +193,7 @@ header>h1 {
 }
 
 .about-details {
+    /* border: #00F594 solid 2px; */
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -277,6 +296,7 @@ header>h1 {
 
 /* Features Episode  */
 .features-section {
+    /* border: #0d0f96 solid 2px ; */
     background-color: #1A0B2E;
     padding: 60px 20px;
     text-align: center;
@@ -356,6 +376,7 @@ header>h1 {
 }
 
 .host-box {
+    /* border: #00F594 solid 2px ; */
     background-color: #24143a;
     max-width: 1200px;
     margin: 0 auto;
@@ -538,5 +559,13 @@ header>h1 {
     .header-container {
         width: 180px;
         height: 180px;
+    }
+    .circle-bg{
+        animation: none;
+        transition: none;
+    }
+    .mic-icon{
+        animation: none;
+        transition: none;
     }
 }
