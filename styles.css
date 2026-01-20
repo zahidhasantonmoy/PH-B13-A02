@@ -8,6 +8,7 @@
 body{
     width: 1000;
     background-color: #412567;
+    
    
 }
 /* Navigation Bar */
@@ -46,6 +47,32 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 .hamburger-btn{
     display: none;
 }
+
+.hero-section{
+    width: 100%;
+    height: 720px;
+    background-image: url('./assets/hero-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.round-img{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.round-img img{
+    justify-content: center;
+    margin: 100px auto;
+    width: 21%;
+    height: 46%;
+    border-radius: 50%;
+    
+    
+}
+
+/* Mobile Responsive */
 @media screen and (max-width:  576px) {
     nav .navbar {
         display: flex;
