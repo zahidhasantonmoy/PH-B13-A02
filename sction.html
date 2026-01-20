@@ -26,7 +26,7 @@ body{
     color: white;
 }
 
-.hero-image-container {
+.header-container {
     position: relative;
     width: 250px;
     height: 250px;
@@ -46,7 +46,6 @@ body{
     width: 80px;
 }
 
-/* The small green NEW badge */
 .new-badge {
     position: absolute;
     top: 10px;
@@ -59,7 +58,7 @@ body{
     border-radius: 20px;
 }
 
-.hero-title {
+h1 {
     font-size: 72px;
     font-weight: 900;
     margin-bottom: 10px;
@@ -72,13 +71,12 @@ body{
     margin: 0 auto 40px auto;
 }
 
-.hero-btns {
+.btn {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-/* Spotify Button with Gradient */
 .spotify-btn {
     background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
     border: none;
@@ -92,7 +90,6 @@ body{
     cursor: pointer;
 }
 
-/* Subscribe Button with Border */
 .sub-btn {
     background: transparent;
     border: 1px solid #00FF88;
@@ -106,46 +103,24 @@ body{
     cursor: pointer;
 }
 
-/* Mobile adjustments */
 @media screen and (max-width: 600px) {
-    .hero-title {
+    h1 {
         font-size: 48px;
     }
     
-    .hero-btns {
+    .btn {
         flex-direction: column;
         align-items: center;
     }
     
-    .hero-image-container {
+    .header-container {
         width: 180px;
         height: 180px;
     }
 }
-
     </style>
 </head>
 <body>
- <header class="hero">
-    <div class="hero-content">
-        <div class="hero-image-container">
-            <img src="./assets/hero-circle.png" class="circle-bg">
-            <img src="./assets/microphone.png" class="mic-icon">
-            <span class="new-badge">NEW</span>
-        </div>
-
-        <h1 class="hero-title">TechWave</h1>
-        <p class="hero-subtitle">Your daily dose of tech insights, productivity hacks, and personal growth</p>
-
-        <div class="hero-btns">
-            <button class="spotify-btn">
-                <img src="./assets/spotify-icon.png"> Listen On Spotify
-            </button>
-            <button class="sub-btn">
-                <img src="./assets/mail-icon.png"> Subscribe
-            </button>
-        </div>
-    </div>
-</header>
+ 
 </body>
 </html>

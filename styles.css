@@ -13,7 +13,7 @@ body{
 }
 /* Navigation Bar */
 nav .navbar{
-    border: #f1eded solid 2px;
+    /* border: #f1eded solid 2px; */
     /* width: 1600px;
     height: 92px; */
     display: flex;
@@ -49,42 +49,103 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 }
 
 /* Hero Section */
-.hero-section{
-    border: #ffffff solid 2px;
-    width: 100%;
-    height: 720px;
+.hero {
     background-image: url('./assets/hero-bg.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
 }
 
-.round-img{
-    border: #a10909 solid 2px;
+.header-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 40px auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.round-img img{
-    justify-content: center;
-    margin: 100px auto;
-    width: 22%;
-    height: 47%;
-    border-radius: 50%;
-    
-    
+
+.circle-bg {
+    width: 100%;
+    height: 100%;
 }
-.hero-section.mic{
-    border: #1A0B2E solid 2px;
+
+.mic-icon {
     position: absolute;
-    width: 50%;
-    height: 50%;
-    border-radius: none;
-    margin-top: 300px;
-    margin-left: -50px;
+    width: 80px;
+}
+
+.new-badge {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #00FF88;
+    color: #1A0B2E;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+header>h1 {
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #d1d1d1;
+    max-width: 500px;
+    margin: 0 auto 40px auto;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.spotify-btn {
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sub-btn {
+    background: transparent;
+    border: 1px solid #00FF88;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* Hero Buttons animation*/
+.spotify-btn, .sub-btn {
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spotify-btn:hover, .sub-btn:hover {
+    transform: translateY(-5px);
+    filter: brightness(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
    
-    /*   About Section  */.about-section {
+    /*   About Section  */
+    .about-section {
    
     padding: 80px 20px;
     text-align: center;
@@ -103,9 +164,8 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 }
 
 .about-content p {
-    color: #D1D1D1;
+    color: #ffffff;
     font-size: 18px;
-    line-height: 1.6;
     margin-bottom: 24px;
 }
 
@@ -189,7 +249,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 }
 
 .grids p {
-    color: #d1d1d1;
+    color: #ffffff;
     font-size: 15px;
     line-height: 1.5;
 }
@@ -308,12 +368,18 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 }
 
 .host-image img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 600px;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
 }
 
+
+
+
+.host-image img:hover {
+    transform: scale(1.05) rotate(2deg);
+}
 .host-info h3 {
     font-size: 28px;
     margin-bottom: 15px;
@@ -410,6 +476,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
     .hamburger-btn{
         display: inline;
     }
+
     .about-details {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -462,5 +529,14 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 
     .logo-text {
         font-size: 32px;
+    }
+    .btn {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header-container {
+        width: 180px;
+        height: 180px;
     }
 }
