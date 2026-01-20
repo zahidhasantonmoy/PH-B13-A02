@@ -419,6 +419,9 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 }
 
 .social-links img {
+    border: gray 1px solid;
+    border-radius: 50%;
+    padding: 5px;
     width: 35px;
     height: 35px;
 }
