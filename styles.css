@@ -1,0 +1,27 @@
+@import "tailwindcss";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Inter", sans-serif;
+}
+body{
+    width: 1000;
+    background-color: #412567;
+   
+}
+nav .navbar{
+    border: #000000 solid 2px;
+    width: 1600px;
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+.logo{
+    width: 219px;
+    height: 32px;
+}
