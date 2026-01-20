@@ -146,6 +146,74 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
     letter-spacing: 1px;
     margin-top: 12px;
 }
+
+
+/* Why Choose TechWave Section */
+
+.why-choose-section {
+    background-color: #230E3D;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.why-choose-section h2 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 48px;
+}
+
+.grids {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.grids > div {
+    background-color: #351165;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.grids img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.grids h3 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.grids p {
+    color: #d1d1d1;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.card-audio {
+    grid-row: span 2;
+}
+
+.card-mobile {
+    grid-column: span 2;
+}
+
+.card-community {
+    grid-column: span 2;
+}
+
+.card-interviews {
+    grid-column: span 2;
+}
+
+.card-resources {
+    grid-column: span 1;
+}
+
 /* Mobile Responsive */
 @media screen and (max-width:  576px) {
     nav .navbar {
@@ -173,5 +241,8 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
     
     .detail-item {
         text-align: center;
+    }
+    .grids {
+        grid-template-columns: 1fr;
     }
 }
