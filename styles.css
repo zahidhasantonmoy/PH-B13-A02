@@ -6,7 +6,7 @@
      font-family: "Inter", sans-serif;
 }
 body{
-    width: 1000;
+    
     background-color: #1A0B2E;
     
    
@@ -84,28 +84,68 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 } */
 
    
-    /*   About Section  */
-.about-section{
-    border: #7c0303 solid 2px;
-    width: 100%;
-    height: 650px;
+    /*   About Section  */.about-section {
+   
+    padding: 80px 20px;
+    text-align: center;
 }
-.about-section .about-content{
-    border: #03037c solid 2px;
-    width: 1200px;
-    height: 250px;
+
+.about-section h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: 0 auto 64px auto;
+}
+
+.about-content p {
+    color: #D1D1D1;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.extra-text {
+    color: white;
+    font-weight: 600;
+}
+
+.about-details {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 50px;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
     align-items: center;
-    justify-items: center;
-}
-.about-section .about-content h2{
-    margin: 20px auto;
-    justify-content: center;
+    padding-top: 48px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
 
+.number {
+    color: #00F594;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.text {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 12px;
+}
 /* Mobile Responsive */
 @media screen and (max-width:  576px) {
     nav .navbar {
@@ -123,5 +163,15 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
     }
     .hamburger-btn{
         display: inline;
+    }
+    .about-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .detail-item {
+        text-align: center;
     }
 }
